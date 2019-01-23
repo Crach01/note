@@ -102,9 +102,18 @@ plt.yticks(range(min(y), max(y)+1))#设置y轴的刻度
 plt.show()
 ```
 
+##### 设置中文显示
+
+windows下
+
+```
+plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
+plt.rcParams['axes.unicode_minus']=False
+```
 
 
-##### 
+
+
 
 
 
