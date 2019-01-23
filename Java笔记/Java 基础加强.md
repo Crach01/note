@@ -142,3 +142,49 @@
 | OutputStream getOutputStream() | 返回一个OutputStream类型的输出流对象，如果该对象是由服务器端Socket返回，就用于向客户端发送数据，反之，用于向服务器端发送数据 |
 
 ![](C:\Users\18451\Desktop\note\Java笔记\images\TCP客户端与服务器端通信图.png)
+
+### Java 集合类
+
+#### 集合概述
+
+>集合按照其存储结构可以分为两大类，即单列集合**Collection**和双列集合**Map**
+
+* Collection：单列集合的跟接口，用于存储一系列符合某种规则的元素，他有两个子接口，分别是List和Set
+  * List：元素有序、元素可重复，实现类：LinkedList、ArrayList
+  * Set：元素无序、不可重复，实现类：HashSet、TreeSet
+* Map：双列集合的根接口，用于存储具有键（Key）、值（value）映射关系的元素
+  * 实现类有HashMap、TreeMap
+
+![](C:\Users\18451\Desktop\note\Java笔记\images\集合体系结构图.png)
+
+#### Collection接口
+
+| 方法声明                          | 功能描述                                                     |
+| --------------------------------- | ------------------------------------------------------------ |
+| boolean add(Object o)             | 向集合中添加一个元素                                         |
+| boolean addAll(Clooection c)      | 将指定Collection中的所有元素添加到该集合中                   |
+| void clear()                      | 删除该集合中的所有元素                                       |
+| boolean remove(Object o)          | 删除该集合中指定的元素                                       |
+| boolean removeAll(Collection c)   | 删除集合中所有元素                                           |
+| boolean isEmpty()                 | 判断集合是否为空                                             |
+| boolean contains(Object o)        | 判断集合中是否包含指定元素                                   |
+| boolean containsAll(Collection c) | 判断该集合是否包含指定集合中的所有元素                       |
+| Iterator iterator（）             | 返回在该集合的元素上进行迭代的迭代器（Iterator），用于遍历该集合所有元素 |
+| int size()                        | 获取该集合元素个数                                           |
+
+#### List接口
+
+##### List接口简介
+
+> List接口继承自Collection接口，是单列集合的一个重要分支，在List接口中允许出现重复的元素，所有的元素以一种线性方式进行存储，在程序中通过索引来访问集合中的指定元素。另外，List集合还有一个特点。就是元素有序，即元素存入的顺序和取出顺序一致。
+
+| 方法声明                                | 功能描述                                   |
+| --------------------------------------- | ------------------------------------------ |
+| void add(int index, Object element)     | 将元素element插入在List集合的index处       |
+| boolean addAll(int index, Collection c) | 将集合c所包含的元素插入到List集合的index处 |
+|                                         |                                            |
+|                                         |                                            |
+|                                         |                                            |
+|                                         |                                            |
+|                                         |                                            |
+
